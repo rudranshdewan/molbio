@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Molality Calculator</title>
+    <link rel="stylesheet" href="/static/css.css">
+    <script src="/static/java.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Molality Calculator</h1>
+        <p>Calculate the molality of a solution.</p>
+    </header>
+    <main class="calculator-page">
+        <label for="soluteMass">Mass of Solute (g):</label>
+        <input type="number" id="soluteMass" placeholder="Enter Mass of Solute">
+        <label for="solventMass">Mass of Solvent (kg):</label>
+        <input type="number" id="solventMass" placeholder="Enter Mass of Solvent">
+        <label for="molMass">Molar Mass (g/mol):</label>
+        <input type="number" id="molMass" placeholder="Enter Molar Mass">
+        <button onclick="calculateMolality()">Calculate Molality</button>
+        <div class="result" id="molalityResult"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Molecular Biology Calculators</p>
+    </footer>
+</body>
+</html>

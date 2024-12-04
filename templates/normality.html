@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normality Calculator</title>
+    <link rel="stylesheet" href="/static/css.css">
+    <script src="/static/java.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Normality Calculator</h1>
+        <p>Calculate the normality of a solution.</p>
+    </header>
+    <main class="calculator-page">
+        <label for="mass">Mass of Solute (g):</label>
+        <input type="number" id="mass" placeholder="Enter Mass of Solute">
+        <label for="equivalent">Equivalent Weight:</label>
+        <input type="number" id="equivalent" placeholder="Enter Equivalent Weight">
+        <label for="volume">Volume (L):</label>
+        <input type="number" id="volume" placeholder="Enter Volume of Solution">
+        <button onclick="calculateNormality()">Calculate Normality</button>
+        <div class="result" id="normalityResult"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Molecular Biology Calculators</p>
+    </footer>
+</body>
+</html>

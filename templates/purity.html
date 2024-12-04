@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Purity Calculator</title>
+    <link rel="stylesheet" href="/static/css.css">
+    <script src="/static/java.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>DNA Purity Calculator</h1>
+        <p>Determine the purity of your DNA sample.</p>
+    </header>
+    <main class="calculator-page">
+        <label for="od260">OD260:</label>
+        <input type="number" id="od260" placeholder="Enter OD260 value">
+        <label for="od280">OD280:</label>
+        <input type="number" id="od280" placeholder="Enter OD280 value">
+        <button onclick="calculatePurity()">Calculate Purity</button>
+        <div class="result" id="purityResult"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Molecular Biology Calculators</p>
+    </footer>
+</body>
+</html>

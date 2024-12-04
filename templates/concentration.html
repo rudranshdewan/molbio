@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNA Concentration Calculator</title>
+    <link rel="stylesheet" href="/static/css.css">
+    <script src="/static/java.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>DNA Concentration Calculator</h1>
+        <p>Calculate the DNA concentration in µg/mL.</p>
+    </header>
+    <main class="calculator-page">
+        <label for="od260_conc">OD260:</label>
+        <input type="number" id="od260_conc" placeholder="Enter OD260 value">
+        <label for="dilutionFactor">Dilution Factor:</label>
+        <input type="number" id="dilutionFactor" placeholder="Enter Dilution Factor">
+        <button onclick="calculateConcentration()">Calculate Concentration</button>
+        <div class="result" id="concentrationResult"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Molecular Biology Calculators</p>
+    </footer>
+</body>
+</html>
