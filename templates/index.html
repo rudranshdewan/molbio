@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Molecular Biology Calculators</title>
-    <link rel="stylesheet" href="/static/css.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css.css') }}">
 </head>
 <body>
     <header class="welcome-header">
@@ -14,15 +14,15 @@
     <main class="welcome-main">
         <h2>Available Calculators</h2>
         <div class="image-container">
-            <img src="/static/images/molecular_biology_left.png" alt="Molecular Biology Left" class="side-image">
+            <img src="{{ url_for('static', filename='images/molecular_biology_left.png') }}" alt="Molecular Biology Left" class="side-image">
         </div>        
         <ul class="calculator-links">
-            <li><a href="purity.html">DNA Purity Calculator</a></li>
-            <li><a href="concentration.html">DNA Concentration Calculator</a></li>
-            <li><a href="normality.html">Normality Calculator</a></li>
-            <li><a href="molarity.html">Molarity Calculator</a></li>
-            <li><a href="molality.html">Molality Calculator</a></li>
-            <li><a href="dilution.html">Dilution Factor Calculator</a></li>
+            <li><a href="{{ url_for('purity') }}">DNA Purity Calculator</a></li>
+            <li><a href="{{ url_for('concentration') }}">DNA Concentration Calculator</a></li>
+            <li><a href="{{ url_for('normality') }}">Normality Calculator</a></li>
+            <li><a href="{{ url_for('molarity') }}">Molarity Calculator</a></li>
+            <li><a href="{{ url_for('molality') }}">Molality Calculator</a></li>
+            <li><a href="{{ url_for('dilution') }}">Dilution Factor Calculator</a></li>
         </ul>
     </main>
     <footer>
